@@ -1,0 +1,17 @@
+<h1>Futbolistas</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-futbolistas [futbolistas]="futbolistas">
+        </app-futbolistas>
+    </div>
+
+    <div class="col">
+        <app-agregar 
+        [nuevo]="nuevo"
+        (OnNuevoFutbolista)="agregarNuevoFutbolista($event)"
+        ></app-agregar>
+    </div>
+
+</div>
